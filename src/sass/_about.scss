@@ -2,16 +2,30 @@
   margin-right: auto;
   margin-left: auto;
   background-color: #28a745;
-  max-width: 320px;
+  max-width: 100%;
   padding-bottom: 79px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 0;
+  }
 }
 
 .team-pic {
   max-width: 100%;
-  object-fit: cover;
   margin-bottom: 79px;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    height: 100%;
+  }
 }
 
+.about-info-wrap {
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
 .about-text {
   font-weight: 400;
   font-size: 16px;
@@ -20,6 +34,11 @@
   color: #ffffff;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .about-title {
@@ -30,6 +49,11 @@
   color: #ffffff;
 
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .about-btn {
@@ -41,4 +65,9 @@
   border-radius: 5px;
   background-color: inherit;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

@@ -11,6 +11,11 @@
   margin-bottom: 16px;
 
   color: #333333;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .cases-title {
@@ -23,11 +28,23 @@
   margin-bottom: 24px;
 
   color: #333333;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
+    max-width: 100%;
+  }
 }
 
-.cases-img-items {
-  &:not(:last-child) {
-    margin-bottom: 5px;
+.cases-img-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 5px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    row-gap: 16px;
   }
 }
 
