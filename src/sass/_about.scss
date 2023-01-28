@@ -1,0 +1,44 @@
+.about {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #28a745;
+  max-width: 320px;
+  padding-bottom: 79px;
+}
+
+.team-pic {
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 79px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #ffffff;
+
+  margin-bottom: 24px;
+}
+
+.about-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 32px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #ffffff;
+}

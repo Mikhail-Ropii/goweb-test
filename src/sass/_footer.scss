@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 320px;
+  background-color: #333333;
+}
+
+.social-list {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: baseline;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #ffffff;
+}

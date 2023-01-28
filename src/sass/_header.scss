@@ -52,7 +52,6 @@
 }
 .header-menu {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -83,17 +82,20 @@
   margin-bottom: 24px;
 }
 
+.hero-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
 .hero-btn {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
 
   color: #ffffff;
-  justify-content: center;
-  align-items: center;
   background: #28a745;
   border-radius: 5px;
   padding: 16px 32px;
-  margin-left: 9px;
-  border: 0;
+}
+.hero-btn-icon {
+  margin-right: 9px;
 }

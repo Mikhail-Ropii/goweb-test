@@ -1,0 +1,39 @@
+.blog {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0284d0;
+  padding-top: 48px;
+  padding-bottom: 58px;
+}
+
+.blog-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  margin-bottom: 16px;
+}
+
+.blog-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+
+  color: #ffffff;
+
+  margin-bottom: 24px;
+}
+
+.blog-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 32px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #ffffff;
+}

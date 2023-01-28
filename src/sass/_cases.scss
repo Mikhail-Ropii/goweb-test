@@ -1,0 +1,36 @@
+.cases {
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+
+.cases-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  color: #333333;
+}
+
+.cases-title {
+  max-width: 219px;
+  margin: auto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  color: #333333;
+}
+
+.cases-img-items {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.cases-img-pic {
+  max-width: 100%;
+}
