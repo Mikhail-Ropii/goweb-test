@@ -1,6 +1,14 @@
 .cases {
   padding-top: 56px;
   padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .cases-text {
@@ -45,6 +53,13 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 18px;
     row-gap: 16px;
+  }
+}
+.cases-img-items {
+  transition: opacity 0.35s;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 }
 

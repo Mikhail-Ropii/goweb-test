@@ -1,5 +1,8 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+// html {
+//   scroll-behavior: smooth;
+// }
 body {
   font-family: 'Open Sans';
 }
@@ -21,4 +24,24 @@ ul {
 }
 button {
   border: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+
+.social-list {
+  justify-content: center;
+  display: flex;
+}
+
+.social-item {
+  display: flex;
+  justify-content: baseline;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
 }

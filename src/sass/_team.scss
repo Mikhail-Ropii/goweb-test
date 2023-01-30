@@ -1,9 +1,18 @@
 .team {
-  max-width: 320px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 72px;
   padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 80px;
+    padding-bottom: 88px;
+  }
 }
 
 .team-text {
@@ -15,6 +24,18 @@
   color: #333333;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+.bottom {
+  margin-bottom: 63px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .team-title {
@@ -26,17 +47,69 @@
   color: #333333;
 
   margin-bottom: 24px;
-}
 
-.team-card {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
   }
 }
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+  }
+}
+
 .team-card-img {
   max-width: 100%;
   margin-bottom: 16px;
 }
+
+.social-ovelay-wrap {
+  cursor: pointer;
+  position: relative;
+  transition: 0.35s;
+  &:hover,
+  &:focus {
+    transform: scale(1.025);
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 12%), 5px 5px 5px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+  }
+}
+.social-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.35s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.team-sicial-img {
+  cursor: pointer;
+  transition: 0.35s;
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
 .team-name {
   font-weight: 400;
   font-size: 20px;
@@ -45,6 +118,11 @@
 
   color: #333333;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .team-position {
   font-weight: 400;
@@ -53,4 +131,9 @@
   text-align: center;
 
   color: #333333;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

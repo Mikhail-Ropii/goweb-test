@@ -1,10 +1,38 @@
 .blog {
-  max-width: 320px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #0284d0;
-  padding-top: 48px;
   padding-bottom: 58px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+}
+
+.padding {
+  @media screen and (min-width: 1360px) {
+    padding-right: 20px;
+  }
+}
+.blog-info-wrap {
+  @media screen and (min-width: 768px) {
+    padding-top: 59px;
+    padding-bottom: 59px;
+  }
+}
+
+.blog-footo {
+  max-width: 100%;
+  margin-bottom: 48px;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    height: 100%;
+  }
 }
 
 .blog-text {
@@ -15,6 +43,11 @@
   color: #ffffff;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .blog-title {
@@ -25,6 +58,11 @@
   color: #ffffff;
 
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 
 .blog-btn {
@@ -36,4 +74,17 @@
   border-radius: 5px;
   background-color: inherit;
   color: #ffffff;
+  cursor: pointer;
+
+  transition: 0.35s;
+  &:hover,
+  &:focus {
+    color: #0284d0;
+    background-color: #f4f4f4;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
