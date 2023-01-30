@@ -44,7 +44,7 @@ contactForm.addEventListener('submit', function (e) {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log('Form successfully submitted'))
+    .then(() => alert('Thank you for your submission'))
     .catch(error => alert(error));
 });
 
