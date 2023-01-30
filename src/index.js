@@ -1,5 +1,4 @@
 const contactForm = document.querySelector('.contact-form');
-const submitBtn = contactForm.querySelector('.submit-btn');
 const email = contactForm.querySelector('[name="email"]');
 const errorMessage = contactForm.querySelector('.error-message');
 
@@ -7,6 +6,19 @@ document.querySelector('.header-menu').addEventListener('click', function (e) {
   e.preventDefault();
   const href = e.target.getAttribute('href').substring(1);
   const section = document.getElementById(href);
+  const headerHeight = document.querySelector('.header').offsetHeight;
+  const sectionPosition = section.getBoundingClientRect().top;
+  const scrollPosition = sectionPosition - headerHeight;
+
+  window.scrollBy({
+    top: scrollPosition,
+    behavior: 'smooth',
+  });
+});
+
+document.querySelector('.hero-btn').addEventListener('click', function (e) {
+  e.preventDefault();
+  const section = document.getElementById('about');
   const headerHeight = document.querySelector('.header').offsetHeight;
   const sectionPosition = section.getBoundingClientRect().top;
   const scrollPosition = sectionPosition - headerHeight;
