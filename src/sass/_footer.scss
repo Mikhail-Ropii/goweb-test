@@ -1,16 +1,21 @@
 .footer {
-  max-width: 100%;
+  max-width: 320px;
+  margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #333333;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1360px) {
+    max-width: 1360px;
+  }
 }
 
 .footer-social {
   margin-bottom: 12px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-  }
 }
 
 .footer-social-icon {

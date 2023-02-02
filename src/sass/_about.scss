@@ -2,12 +2,16 @@
   margin-right: auto;
   margin-left: auto;
   background-color: #28a745;
-  max-width: 100%;
+  max-width: 320px;
   padding-bottom: 79px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     padding-bottom: 0;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1360px) {
+    max-width: 1360px;
   }
 }
 
@@ -22,9 +26,12 @@
   }
 }
 
-.padding {
-  padding-left: 20px;
+.about-content-container {
+  @media screen and (min-width: 1360px) {
+    padding-left: 20px;
+  }
 }
+
 .about-info-wrap {
   @media screen and (min-width: 768px) {
     padding-top: 62px;

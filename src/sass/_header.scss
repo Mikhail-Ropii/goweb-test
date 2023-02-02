@@ -1,17 +1,19 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 320px;
 
   padding-bottom: 104px;
 
   @media screen and (min-width: 768px) {
     padding-top: 10px;
     padding-bottom: 378px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1360px) {
     padding-top: 21px;
     padding-bottom: 270px;
+    max-width: 1360px;
   }
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -100,22 +102,26 @@
   }
 }
 .header-scroll {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  max-width: 320px;
   z-index: 10;
   animation: header 1s;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-left: 22px;
   padding-right: 22px;
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1360px) {
     padding-left: 28px;
     padding-right: 28px;
+    max-width: 1360px;
   }
 }
 
